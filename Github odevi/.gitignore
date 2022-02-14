@@ -1,0 +1,11 @@
+#resimler
+*.jpg
+*.png
+
+#videolar
+*.mp4
+
+#log
+*.log
+
+password.txt

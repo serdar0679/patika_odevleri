@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Eğitiminin Özeti</title>
+</head>
+
+<body>
+
+<h1 id="En Üst">HTML EĞİTİMİNİN ÖZET NOTLARI</h1>
+<a href="Hakkimda.html"> Hakkımda</a>
+<br>
+<a href="#En Alt"> En Alta Git</a>
+<br>
+
+<h2>HTML Giriş</h2>
+<ol>
+    <li>Kullanılacak Tüm Dökümanlar</li>
+    <p>  <a href="https://github.com/hakanyalcinkaya/kodluyoruz-frontend-101-egitimi"> https://github.com/hakanyalcinkaya/kodluyoruz-frontend-101-egitimi</a>    adresinden repoya ulaşabilir, sağ kısımdaki code butonuna basıp çıkan menüden download zip butonuna basarak da tüm repo'yu bilgisayarınıza indirebilirsiniz.</p>
+    
+    <li>HTML Nedir?</li>
+    <a href="https://tr.wikipedia.org/wiki/HTML">https://tr.wikipedia.org/wiki/HTML</a>
+    <ul>
+        <li>Hiper Metin İşaretleme Dili (İngilizce Hypertext Markup Language, ks. HTML) web sayfalarını oluşturmak için kullanılan standart metin işaretleme dilidir. </li>
+        <li>HTML, bir programlama dili olarak tanımlanamaz. Zira HTML kodlarıyla kendi başına çalışan bir program yazılamaz.</li>
+        <li>Aynı HTML kodunun farklı tarayıcılarda farklı sonuç vermesi olasıdır. CSS ve JavaScript ile beraber kullanıldığında HTML vasıtasıyla görsel ve dinamik web siteleri yaratılabilir.</li>
+        <li>1980 yılında CERN'de görevli olan Tim Berners-Lee, icat etti.
+            1989 yılına gelindiğinde internet tabanlı sistemin ilk temellerini yine aynı isim Tim Berners Lee attı.[1] 1990 yılında HTML işaretleme dilini geliştirmesinden sonra World Wide Web (WWW) sistemini kurmuştur.</li>
+    </ul>
+    <br>
+    <li>En Çok Kullanılan HTML Etiketleri</li>
+        <ol>
+        <li>Head etiketi: Site ziyaretçileri tarafından görülmesi gerekmeyen kodları içerir.</li>
+        <li>BODY Etiketi: Web sayfamızda görmek istediğimiz bütün içerikleri <body> etiketi altına yazıyoruz. </li>
+        </ol>
+    <br>
+    <li>Başlık Etiketleri Kullanımı</li>
+    <p>Başlıklar hiyerarşik olarak h1, h2... sıralanır.</p>
+    <br>
+    <li>İpuçları</li>
+    <ol>
+        <li>HTML yapısını (head, body vb.) oluşturmak için ! ve Tab basılır</li>
+        <li>  Açıklama satırı eklemenin klavye kısayolu: ctrl + ö</li>
+        <!--Önceden yazılan ifadeleri de içine alacak şekilde  -->
+        <li>Shift+tab: Sola yaslar</li>
+        <li>HTML'de enter, görünümde etkisizdir.</li>
+        <li>Etiketleri fonksiyonsuz yazmak için:?</li>
+        <li>Live server eklentisi ile yapılan değişiklikleri anında tarayıcıda görebilirsin. Bunun için ekranın ikiye ayrılması gerek. kullandığınız programı yarım ekran olarak sağa ya da sola yaslayarak ekranı ikiye bölmek istiyorsanız windows + sağ ya da sol ok yön tuşlarını kullanabilirsiniz.</li>
+    </ol>
+    <hr>
+    <h2>LİSTELER, GÖRSELLER, LİNKLER</h2>
+    <br>
+    <li>Listeler</li>
+    Konu anlatımı: <a href="https://www.youtube.com/watch?v=iHuHfcogXtQ" target="_blank">https://www.youtube.com/watch?v=iHuHfcogXtQ</a>
+    <br>
+    <ol type="A">
+        <li>Sıralı Listeler</li>
+        <ol>
+            <li>Liste başındaki sıralandırmayı rakamdan başka roma rakamı veya alfabetik şeklinde de yapabiliriz. Bunun için ol type="A" özelliğini kullanmamız gerekir.</li>
+            <li>Diğer</li>
+        </ol>
+        <li>Sırasız Listeler</li>
+        <ul style="list-style-type: disc;">
+            <li>Başında işaret olmaması için; ul style="list-style-type:none" </li>
+            <li>Liste başında disc, square, circle değerlerini kullanabiliriz.ul style="list-style-type:square"</li>
+        </ul>
+    </ol>
+
+    <br>
+    <li>Emmet Kısayolları</li>
+    <br>Konu anlatımı: <a href="https://www.youtube.com/watch?v=iHuHfcogXtQ" target="_blank">https://www.youtube.com/watch?v=iHuHfcogXtQ</a>
+    <br>
+    
+    <!--Aşağıdaki yapının kısayolu: ol>li*8-->
+    <ol>
+        <li>> ifadesini kullanarak kardeş element oluşturuyoruz. ul>li gibi. kardeş eleman kalmayınca ise ^ ifadesini kullanarak ul tagı dışına çıkıp yeni taglar oluşturabiliriz.</li>
+        
+        <!--ul>li^ol sonucu: 
+            <ul>
+             <li></li>
+         </ul>
+         <ol></ol>
+         -->
+         
+        <li>* ile birden fazla sayıda üretmek mümkün</li>
+        <!--ul>li*2^ol sonucu: 
+            <ul>
+             <li></li>
+             <li></li>
+         </ul>
+         <ol></ol>
+         -->
+        <li> + ifadesiyle kardeş eleman eklenebilir</li>
+        <!--ul>li*2^ol+ul sonucu:
+        <ul>
+            <li></li>
+            <li></li>
+        </ul>
+        <ol></ol>
+        <ul></ul>  -->
+        
+        <li>Tag eklerken onlara class özelliği vermek için de . ifadesini kullanırız.</li>
+        <!-- h1.deneme>lorem1 sonucu: 
+            <h1 class="deneme">Lorem.</h1> -->
+        
+        <li>Bir id özelliği eklemek için ise # ifadesini kullanırız.</li>
+        <!-- ul#id1>li#id2 sonucu:
+            <ul id="id1">
+                <li id="id2"></li>
+            </ul> 
+        amacım farklı id’lere sahip üç adet li tagı oluşturmaksa ul>li#id1+li#id2+li#id3 yapılır.
+    otomatik artış sağlayan değerleri tek tek yazmak yerine $ ifadesi kullanılır. Yani çok daha basit bir biçimde ul>li#id$*3 diyerek yazabiliriz.
+    <ul>
+  <li id="id1"></li>
+  <li id="id2"></li>
+  <li id="id3"></li>
+    </ul>
+    -->
+    <li>Text yazmak için {} kullanıyoruz</li>
+    
+    <!-- p{Emmet ile tag içine text yazma} : <p>Emmet ile tag içine text yazma</p> -->
+    <li>Uyduruk Text yazmak için lorem ifadesini kullanıyoruz. lorem3: 3 kelimelik yazı</li>
+    <!-- p>lorem2 sonucu: <p>Lorem, ipsum.</p> -->
+
+    <li>herhangi bir tag koymaksızın sadece .className yazdıktan sonra: div class="className"...Ama biz bunu ul tagı içinde denersek: li class="className"oluşur. </li>
+    </ol>
+    <br>
+    <li>Görsellerle Çalışmak</li>
+    <br>
+    Konu anlatımı: <a href="https://www.youtube.com/watch?v=iHuHfcogXtQ" target="_blank">https://www.youtube.com/watch?v=iHuHfcogXtQ</a>
+    <br>
+    <br>
+    <ul>
+        <li>HTML dosyaları nasıl .html ile bitiyorsa tüm resim dosyalarının sonu da .xbm, .gif, .png veya .jpg ile veya başka bir resim formatıyla bitmelidir.</li>
+        <li>Alt textlerin temel amacı, görüntüleri göremeyen kullanıcılar için metinler sunmaktır. Kullanıcı görseli görüntüleyemez ise (Yavaş bağlantı, src özelliğinde hata vb.) alt özelliği görüntü için alternatif bilgilendirici bir metin içerir.</li>
+        <li>Title özelliği kullanıcıyı bilgilendirme amacı taşır. Cursor(mouse imleci) ile görselin üzerine gelince bu özelliğe verilen text mesajı görünür. Ek açıklama gerektirecek resimlerde kullanabiliriz. Bilgilendirme amacı taşır. Title ve Alt parametreleri SEO açısından önem taşımaktadır.</li>
+        <li>Görsele istenen ölçüleri vermek için width ve height özellikleri kullanılır. Bu ölçülerden yalnızca birine değer verildiğinde görsel oranları korunarak belirlenen ölçüde görünür. </li>
+        <li>Border istenen kalınlıkta foto çerçevesi oluşturur.</li>
+        <li>Web sayfasında resmin gözükeceği pozisyonu belirlemede align özelliği kullanılır. Bu özelliğe verilebilecek değerler şunlardır: left, right. Görselin sağa veya sola yaslı çıkmasını sağlar.</li>
+        <br>
+        <li>Pc içinde bir fotoyu göstermek</li>
+        <br>
+        
+        <img src="../media/kodlama ekranı karanlık.jpeg" width="300" height="200" bordr="3" alt="Pc ekranı" title="Foto">
+    <!--foto farklı yerdeyse mesela üst dizine çıkmak için "../" kullanılır.-->
+        <br> 
+        <br>   
+        <li>Rastgele değişen foto yerleştirmek için (Lorem yazıları gibi) : https://picsum.photos/200/300 </li>
+        <br>
+        <img src="https://picsum.photos/150/100" alt="Lorem picsum'dan rastgele foto">
+        <br>
+        <br>
+        <li>Görsele link vermek: Yönlendirilmek istenen yerin URL'i a taginin href özelliğine yazılır. Görsel ise a taginin açıklama kısmına eklenir.</li>
+        <br>
+        <a href="https://picsum.photos/id/1/5616/3744" target=_blank ><img src="https://picsum.photos/id/1/5616/3744" width="300" alt="Lorem picsum'dan Kodlama fotosu"></a>
+        <li>map ve area etiketleri ile sadece resmin içindeki koordinatlarla belirlediğimiz bir alanı link haline getirebiliriz. Örneğin Instagram'da bazı satıcılarda gördüğünüz bir insan fotoğraf üzerinde pantolon ve ayakkabının ürün linklerini ayrı ayrı vermek isterseniz kullanabilirsiniz. </li>
+        <li>onload Event'i görsel yüklenmesi tamamlandığında çalışacak fonksiyonu belirler.</li>
+        <li>picture Elementi: HTML5 ile gelen picture elementi web sayfamızda responsive image'ler kullanmamız konusunda büyük kolaylıklar sağlıyor. ekran boyutu değiştikçe farklı image'leri kullanabilirsiniz. Mobilde küçük, PC'de büyük foto göstermek için</li>
+    </ul>
+    <br>
+    <li>Linklerle Çalışmak</li>
+    Konu anlatımı: <a href="https://www.youtube.com/watch?v=iHuHfcogXtQ" target="_blank">https://www.youtube.com/watch?v=iHuHfcogXtQ</a>
+    <br>
+    <br>
+    Bir HTML dosyası içerisinde herhangi bir sayfaya, sayfa içine, bir websitesine, e-mail, telefon adreslerine ya da dosya yolu belirtilen herhangi bir dosyaya (resim, video, zip vb.) erişmek için kullanılan HTML etiketidir. Harici bir sayfa ise mutlaka http:// kullanmalısın!
+    <ul>
+        <li>Başka bir sayfaya gitmek için: <a href="Halile_surpriz.html" target=_blank>  Halile_surpriz sayfası</a> </li>
+        <li>Sayfa içinde bir yere gitmek için: <a href="#En Üst"> En Üste Git</a></li>
+        <li>Mail Atmak için: <a href="mailto:info@kodluyoruz.org"> info@kodluyoruz.org</a></li>
+        <li>Telefon Et: <a href="tel:0555">0555 555 55 55</a></li>
+    </ul>
+    <br>
+    <hr>
+    
+    <div>
+        <li>Blok Elementler ve Inline Elementler</li>
+        Konu anlatımı: <a href="https://www.youtube.com/watch?v=iHuHfcogXtQ" target="_blank">https://www.youtube.com/watch?v=iHuHfcogXtQ</a>
+        <br>
+        Bunlar daha çok <span style="color:red"> CSS kullanıldığında işe yarayacak.</span> 
+        <ul>
+            <li>Blok oluşturmak için div etiketi kullanılır.</li>
+            <li>Sanal bloklar oluşturmak için ise span kullanılır.Bir yerde bir özellik verirken diğer özelliklerin değişmesini istemiyorsak işe yarar. Bütün cümleyi değil de birkaç kelimeyi farklı renkte göstermek vb.</li>
+            <li>Hangileri blok hangileri inline: <a href="https://htmlreference.io/">https://htmlreference.io/</a></li>
+        </ul> 
+    </div>
+    <hr>
+    <!-- hr: tek satır çizgi çizer -->
+    <h2>EKSTRA ÖZELLİKLER</h2>
+    <br>
+    <li>HTML Etiketlerine Ekstra Özellikler Eklemek</li>
+    <br>
+    Konu anlatımı: <a href="https://www.youtube.com/watch?v=iHuHfcogXtQ" target="_blank">https://www.youtube.com/watch?v=iHuHfcogXtQ</a>
+    <br>
+<ul>
+    <li>Tüm HTML elementleri nitelik alabilirler.</li>
+    <li>Her zaman başlangıç elemanının içine yazılır.</li>
+    <li>Kelimeler arasında tire işareti koyarak(html-etiketi) veya camel case(htmlEtiketi) şeklinde kullanılabilir. HTML'de genellikle - (tire) kullanılır.</li>
+    <li>class veya id gibi özniteliklerin ismi belirlerken Türkçe karakter tercih edilmemelidir.</li>
+    <li>id (identity = kimlik), kullanılan etiketin kimliğini belirtir. Biriciktir*(unique)* yani dökümanın içindeki bir etikete yalnızca bir kez o id ismi verilebilir. O yüzden <strong>sadece id için eşittir sonrasında çift tırnak şart değildir.</strong>  </li>
+</ul>
+<br>
+<li>HTML İskeletinin Genel Yapısını Anlamak </li>
+<br>
+<ul>
+    <li>! +Tab ile HTML iskeleti oluşur.</li>
+    <li>Genellikle sayfanın head bölümünde yalnızca birkaç etiket kullanılır. Sayfanızın hiçbir metnini başlığa ( head etiketleri arasına ) koymamalısınız.</li>
+    <li>meta: sayfa bilgileri: sayfa açıklaması, sayfa başlığı, yazı karakteri... </li>
+    <li>title: Tarayıcı başlığında yazacak ifade.</li>
+    <li>style: Arka plan rengi, yazı rengi vb.</li>
+</ul>
+<br>
+<li>Semantic(Anlamlandırılmış) HTML Etiketleri Kullanımı </li>
+<br>
+    Konu anlatımı: <a href="https://www.youtube.com/watch?v=iHuHfcogXtQ" target="_blank">https://www.youtube.com/watch?v=iHuHfcogXtQ</a>
+    <br>
+<ul>
+    <li>div veya span semantik değildir. İçeriği hakkında bilgi vermezler. Ama form, table, img etiketleri semantiktir.</li>
+    <li>Web sayfasını genel hatlara bölmek işi kolaylaştırır. bu yüzden div yerine nav, asidebar, header, footer vb. etiket isimleri kullanılır</li>
+</ul>
+<br>
+<li>Bölüm Sonu Uygulaması</li>
+    <br>
+    Konu anlatımı part1: <a href="https://www.youtube.com/watch?v=hLixmw3Qhds" target="_blank">https://www.youtube.com/watch?v=hLixmw3Qhds</a>
+    <br>
+    <br>
+    Konu anlatımı part2: <a href="https://www.youtube.com/watch?v=AgUa1cMUEVk" target="_blank">https://www.youtube.com/watch?v=AgUa1cMUEVk</a>
+    <br>
+
+<!--Liste sonu-->
+</ol>
+
+<p>Mail: <a href="mailto:info@kodluyoruz.org"> info@kodluyoruz.org</a></p>
+<p>Telefon: <a href="tel:0555">0555 555 55 55</a></p>     
+
+<br id="En Alt">
+<a href="#En Üst"> En Üste Git</a>
+<br>
+</body>
+</html>

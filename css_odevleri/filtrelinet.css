@@ -1,0 +1,108 @@
+/*******************Body**************************/
+body{font-family: Arial;}
+
+/* header img{
+    max-width: 15% ;
+    max-height: 15% ;
+} */
+
+ 
+/*******************Başlıklar**************************/
+h1, h2 {
+color: white;
+font-size: 40px;   
+font-family: 'Courier New', Courier, monospace; 
+background-color: crimson;
+justify-content: center;
+}
+
+/*******************Paragraf**************************/
+
+/*******************Linkler**************************/
+a{
+    text-decoration: none;
+    cursor: pointer;
+    /* color: inherit; */
+}
+
+/*******************Listeler**************************/
+/*li {
+color:green;
+font-style: normal;
+font-size: 24;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+padding: 20px;
+
+}*/
+
+/*******************Class: ismi biz veriyoruz ama başında nokta olmalı! *******************/
+.menu {
+    font-size: 20px;
+    background-color: white;
+    width: 70%;
+    height: auto;
+    margin: auto;
+    /* padding: auto ; */
+    list-style: none;
+    /*display: inline;*/
+    display: flex;
+    justify-content: space-evenly; /*içindeki elementler arasına ve kenarlara eşit mesafe koyacak*/
+    align-items: center;
+}
+.footer{
+    font-size: 20px;
+    /* background-color:yellow; */
+    width: 70%;
+    height: 30px;
+    margin: 10px auto;
+    /* padding: auto ; */
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container{
+width: 1000px; /* neden box'lar 400 iken x4 1600 olmaya çalışmıyor da ortadakileri daraltıyor. Çünkü display: flex bunu sağlıyor. bunun yanında flex-wrap kullanırsan sığmazsa aşağı atar.*/
+min-height: 300px; /*içindeki boxlar artıp taşarsa alt satırlara inip esneyecek */
+margin: auto;
+display: flex; /* alternatif eski yöntem= float: left;*/
+flex-wrap: wrap; /*sığmazsa aşağı at */
+justify-content: center; 
+}
+
+.box{
+width: 400px ;
+height: 300px;
+/* padding: 20px; */
+margin: 5px 5px;
+display: flex; /*kaldırınca youtube kutusu bozuluyor */
+font-family: 'Courier New', Courier, monospace;
+font-size: 40px;
+text-align: center;
+}
+
+.bg-red{
+background-color: red;
+}
+
+.bg-green{
+    background-color: green;
+    }
+
+.bg-blue{
+    background-color: blue;
+    }
+
+.bg-orange{
+    background-color: orange;
+    }
+
+.text-red {
+    color:red;
+}
+.font-size-30 {font-size: 30px;}
+
+/*******************ID: ID seçicisi CSS’de # ile belirtilir **************************/
+#italic {
+    font-style: italic;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <title>Patika Javascript Saat Ödevi</title>
+  </head>
+  <body class="bg-dark">
+    <div class="text-center">
+      <img
+        src="https://cdn.sanity.io/images/9kdepi1d/production/65c832d202a503b15d99e628f4313782f3ef50db-300x62.png"
+        alt=""
+        class="rounded"
+      />
+      <div class="text1 text-center">
+        Merhaba <strong><span id="myName"></span></strong>, Hoş geldin.
+      </div>
+      <div id="myClock" class="clock" onload="showTime()"></div>
+      <div class="text2 text-center">
+        şu an <br>
+        <strong>Patika Frontend Web Development Patikası</strong>'nın <br>
+        JavaScript Bölümü'nün 1. Ödevini <br> Serdar'ın Yaptığı Şekliyle Görmektesin.
+      </div>
+    </div>
+    <!-- <script src="js/clock.js"></script> -->
+    <script>
+      
+      // Kullanıcıdan prompt yöntemi ile isim bilgisi alma:
+
+        let userName = prompt("Lütfen adınızı giriniz:");
+
+// if,  else if yapısı ile aldığımız kullanıcı adını HTML'e yazdırma. Prompt kutusuna boş iken tamam'a tıklanırsa, ya da iptal edilerek prompt kutusu kapatılırsa alert ile geri bildirim verme.
+
+if( (userName != "") && (userName != null) ) {
+    document.getElementById("myName").innerHTML=userName.toUpperCase();   
+}
+
+else if(userName == "") 
+
+alert("İsminizi Girmediniz!");
+
+else if(userName == null) 
+
+alert("Giriş yapmaktan korkma!");
+
+// Fonksiyon içinde bir değişkeni tarihe tanımlama, bu değişkeni HTML'e yazdırma
+
+function dateClock(){
+
+  //tarih ve yerel saat gösterimi:
+
+  //let d= new Date().toLocaleString() ;
+  //document.getElementById("myClock").innerHTML=d;
+
+  //tarih ve gün gösterimi:
+
+  // let tarih= new Date()
+  // let yerel_tarih= new Date().toLocaleString();
+  // const weekday = ["Pazar","P.tesi","Salı","Çarşamba","Perşembe","Cuma","Cumartesi"];
+  // let gun= weekday[tarih.getDay()];
+  // document.getElementById("myClock").innerHTML=yerel_tarih+" "+ gun;
+
+  //yerel saat ve gün gösterimi:
+
+  let tarih= new Date()
+  const weekday = ["Pazar","P.tesi","Salı","Çarşamba","Perşembe","Cuma","Cumartesi"];
+  let gun= weekday[tarih.getDay()];
+  let yerel_saat= tarih.toLocaleTimeString();
+  document.getElementById("myClock").innerHTML=yerel_saat+" "+ gun;
+
+}
+//saniyede bir fonksiyonu çalıştırarak, anlık saati ekranda göster:
+setInterval(dateClock,1000);
+    </script>
+  </body>
+</html>
